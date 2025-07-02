@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5FD1627B2E15EEFF0032B7CE /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 5FD1627A2E15EEFF0032B7CE /* Appwrite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5FD162452E15EDA80032B7CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD1627B2E15EEFF0032B7CE /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = FlickBuy;
 			packageProductDependencies = (
+				5FD1627A2E15EEFF0032B7CE /* Appwrite */,
 			);
 			productName = FlickBuy;
 			productReference = 5FD162352E15EDA20032B7CE /* FlickBuy.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 5FD1622C2E15EDA10032B7CE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5FD162792E15EEFF0032B7CE /* XCRemoteSwiftPackageReference "sdk-for-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5FD162362E15EDA20032B7CE /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FD162792E15EEFF0032B7CE /* XCRemoteSwiftPackageReference "sdk-for-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FD1627A2E15EEFF0032B7CE /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FD162792E15EEFF0032B7CE /* XCRemoteSwiftPackageReference "sdk-for-swift" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FD1622D2E15EDA20032B7CE /* Project object */;
 }

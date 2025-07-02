@@ -1,6 +1,6 @@
 //
 //  Item.swift
-//  FlickBuy
+//  FlickBuyApp
 //
 //  Created by Phu DO on 3/7/25.
 //

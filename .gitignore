@@ -1,0 +1,22 @@
+# Created by Gemini Code Assist for a Swift project
+
+# macOS
+.DS_Store
+
+# Xcode
+## Build generated
+build/
+DerivedData/
+
+## User-specific
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.swiftpm/
+
+# CocoaPods
+Pods/

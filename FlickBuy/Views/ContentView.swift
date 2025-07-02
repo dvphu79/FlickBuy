@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  FlickBuy
+//  FlickBuyApp
 //
 //  Created by Phu DO on 3/7/25.
 //
@@ -11,6 +11,7 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    @EnvironmentObject var authViewModel: AuthViewModel
 
     var body: some View {
         NavigationSplitView {
@@ -24,7 +25,13 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
+            .navigationTitle("Items")
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Sign Out") {
+                        authViewModel.signOut()
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
@@ -58,4 +65,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
+        .environmentObject(AuthViewModel())
 }
