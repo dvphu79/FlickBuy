@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037C38946FAAE48CF951F9C4 /* Pods_FlickBuy_FlickBuyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3F95349F3E81F2FE469BE9 /* Pods_FlickBuy_FlickBuyUITests.framework */; };
 		5FD1627B2E15EEFF0032B7CE /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 5FD1627A2E15EEFF0032B7CE /* Appwrite */; };
+		88A1558A0847CBCA93E3BF68 /* Pods_FlickBuy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA99704101D7F2A4019C7E3 /* Pods_FlickBuy.framework */; };
+		F635619F9DF7428A6A51B1D0 /* Pods_FlickBuyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D4497A60FA10C2DAA5B03E /* Pods_FlickBuyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254F0F9AFB344DBDBC4A69AA /* Pods-FlickBuy-FlickBuyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuy-FlickBuyUITests.release.xcconfig"; path = "Target Support Files/Pods-FlickBuy-FlickBuyUITests/Pods-FlickBuy-FlickBuyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		348334675269AA67EE1FB50A /* Pods-FlickBuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuy.release.xcconfig"; path = "Target Support Files/Pods-FlickBuy/Pods-FlickBuy.release.xcconfig"; sourceTree = "<group>"; };
 		5FD162352E15EDA20032B7CE /* FlickBuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickBuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD162442E15EDA80032B7CE /* FlickBuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickBuyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD1624E2E15EDA80032B7CE /* FlickBuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickBuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6782C21BBCDCD6C072D5A6BD /* Pods-FlickBuyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuyTests.debug.xcconfig"; path = "Target Support Files/Pods-FlickBuyTests/Pods-FlickBuyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77D4497A60FA10C2DAA5B03E /* Pods_FlickBuyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickBuyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE0379DFA0B59492F0328B9 /* Pods-FlickBuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuy.debug.xcconfig"; path = "Target Support Files/Pods-FlickBuy/Pods-FlickBuy.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA99704101D7F2A4019C7E3 /* Pods_FlickBuy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickBuy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0656A288A48527F2D7B903A /* Pods-FlickBuyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuyTests.release.xcconfig"; path = "Target Support Files/Pods-FlickBuyTests/Pods-FlickBuyTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED3F95349F3E81F2FE469BE9 /* Pods_FlickBuy_FlickBuyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickBuy_FlickBuyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AA803BAC17368A73DEEBF7 /* Pods-FlickBuy-FlickBuyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickBuy-FlickBuyUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlickBuy-FlickBuyUITests/Pods-FlickBuy-FlickBuyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD1627B2E15EEFF0032B7CE /* Appwrite in Frameworks */,
+				88A1558A0847CBCA93E3BF68 /* Pods_FlickBuy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F635619F9DF7428A6A51B1D0 /* Pods_FlickBuyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +85,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037C38946FAAE48CF951F9C4 /* Pods_FlickBuy_FlickBuyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09442957744633617820B7EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA99704101D7F2A4019C7E3 /* Pods_FlickBuy.framework */,
+				ED3F95349F3E81F2FE469BE9 /* Pods_FlickBuy_FlickBuyUITests.framework */,
+				77D4497A60FA10C2DAA5B03E /* Pods_FlickBuyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		287DAFF638D0E00ABB381AF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BE0379DFA0B59492F0328B9 /* Pods-FlickBuy.debug.xcconfig */,
+				348334675269AA67EE1FB50A /* Pods-FlickBuy.release.xcconfig */,
+				F0AA803BAC17368A73DEEBF7 /* Pods-FlickBuy-FlickBuyUITests.debug.xcconfig */,
+				254F0F9AFB344DBDBC4A69AA /* Pods-FlickBuy-FlickBuyUITests.release.xcconfig */,
+				6782C21BBCDCD6C072D5A6BD /* Pods-FlickBuyTests.debug.xcconfig */,
+				D0656A288A48527F2D7B903A /* Pods-FlickBuyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5FD1622C2E15EDA10032B7CE = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +122,8 @@
 				5FD162472E15EDA80032B7CE /* FlickBuyTests */,
 				5FD162512E15EDA80032B7CE /* FlickBuyUITests */,
 				5FD162362E15EDA20032B7CE /* Products */,
+				287DAFF638D0E00ABB381AF0 /* Pods */,
+				09442957744633617820B7EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD162582E15EDA80032B7CE /* Build configuration list for PBXNativeTarget "FlickBuy" */;
 			buildPhases = (
+				F42CEC95DF44E0EE9C54C54A /* [CP] Check Pods Manifest.lock */,
 				5FD162312E15EDA20032B7CE /* Sources */,
 				5FD162322E15EDA20032B7CE /* Frameworks */,
 				5FD162332E15EDA20032B7CE /* Resources */,
@@ -127,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD1625B2E15EDA80032B7CE /* Build configuration list for PBXNativeTarget "FlickBuyTests" */;
 			buildPhases = (
+				03776945124D25D9A3ECD775 /* [CP] Check Pods Manifest.lock */,
 				5FD162402E15EDA80032B7CE /* Sources */,
 				5FD162412E15EDA80032B7CE /* Frameworks */,
 				5FD162422E15EDA80032B7CE /* Resources */,
@@ -140,8 +182,6 @@
 				5FD162472E15EDA80032B7CE /* FlickBuyTests */,
 			);
 			name = FlickBuyTests;
-			packageProductDependencies = (
-			);
 			productName = FlickBuyTests;
 			productReference = 5FD162442E15EDA80032B7CE /* FlickBuyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -150,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD1625E2E15EDA80032B7CE /* Build configuration list for PBXNativeTarget "FlickBuyUITests" */;
 			buildPhases = (
+				6253F82B6AAE4A0C1982CC71 /* [CP] Check Pods Manifest.lock */,
 				5FD1624A2E15EDA80032B7CE /* Sources */,
 				5FD1624B2E15EDA80032B7CE /* Frameworks */,
 				5FD1624C2E15EDA80032B7CE /* Resources */,
@@ -163,8 +204,6 @@
 				5FD162512E15EDA80032B7CE /* FlickBuyUITests */,
 			);
 			name = FlickBuyUITests;
-			packageProductDependencies = (
-			);
 			productName = FlickBuyUITests;
 			productReference = 5FD1624E2E15EDA80032B7CE /* FlickBuyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -239,6 +278,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03776945124D25D9A3ECD775 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickBuyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6253F82B6AAE4A0C1982CC71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickBuy-FlickBuyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42CEC95DF44E0EE9C54C54A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickBuy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FD162312E15EDA20032B7CE /* Sources */ = {
@@ -401,6 +509,7 @@
 		};
 		5FD162592E15EDA80032B7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE0379DFA0B59492F0328B9 /* Pods-FlickBuy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,6 +538,7 @@
 		};
 		5FD1625A2E15EDA80032B7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348334675269AA67EE1FB50A /* Pods-FlickBuy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +567,7 @@
 		};
 		5FD1625C2E15EDA80032B7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6782C21BBCDCD6C072D5A6BD /* Pods-FlickBuyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +587,7 @@
 		};
 		5FD1625D2E15EDA80032B7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0656A288A48527F2D7B903A /* Pods-FlickBuyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +607,7 @@
 		};
 		5FD1625F2E15EDA80032B7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0AA803BAC17368A73DEEBF7 /* Pods-FlickBuy-FlickBuyUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -512,6 +625,7 @@
 		};
 		5FD162602E15EDA80032B7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254F0F9AFB344DBDBC4A69AA /* Pods-FlickBuy-FlickBuyUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

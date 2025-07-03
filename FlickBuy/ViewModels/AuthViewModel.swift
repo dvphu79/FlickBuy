@@ -11,19 +11,22 @@ import Appwrite
 @MainActor
 class AuthViewModel: ObservableObject {
     @Published var isLoggedIn = false
+    @Published var currentUser: AppUser?
     @Published var error: String?
 
-    private let appwriteService = AppwriteService.shared
+    private let appwriteService: AppwriteServiceProtocol
 
-    init() {
+    init(appwriteService: AppwriteServiceProtocol = AppwriteService.shared) {
+        self.appwriteService = appwriteService
         checkSession()
     }
 
     func checkSession() {
         Task {
             do {
-                _ = try await appwriteService.account.get()
+                let user = try await appwriteService.account.get()
                 self.isLoggedIn = true
+                self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
             } catch {
                 self.isLoggedIn = false
             }
@@ -34,7 +37,9 @@ class AuthViewModel: ObservableObject {
         Task {
             do {
                 _ = try await appwriteService.account.createEmailPasswordSession(email: email, password: password)
+                let user = try await appwriteService.account.get()
                 self.isLoggedIn = true
+                self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
                 self.error = nil
             } catch {
                 self.isLoggedIn = false
@@ -47,6 +52,7 @@ class AuthViewModel: ObservableObject {
         Task {
             do {
                 _ = try await appwriteService.account.deleteSession(sessionId: "current")
+                self.currentUser = nil
                 self.isLoggedIn = false
             } catch {
                 self.error = error.localizedDescription

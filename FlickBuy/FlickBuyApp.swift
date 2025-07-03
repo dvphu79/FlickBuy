@@ -28,7 +28,7 @@ struct FlickBuyApp: App {
     var body: some Scene {
         WindowGroup {
             if authViewModel.isLoggedIn {
-                ContentView()
+                MainTabBarScreen()
                     .modelContainer(sharedModelContainer)
                     .environmentObject(authViewModel)
             } else {

@@ -1,0 +1,96 @@
+included:
+  - FlickBuy
+
+excluded:
+  - Carthage
+  - Pods
+  - /Pods
+  - ./Pods
+  - ../Pods
+  - .build
+
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - function_body_length
+  - file_length
+  - cyclomatic_complexity
+  - identifier_name
+
+custom_rules:
+  marks_style:
+    name: "Marks"
+    regex: "(////[ ]MARK: [a-zA-Z0-9])"
+    message: "Marks should follow the following structure: // MARK: - Comment."
+    severity: warning
+
+class_delegate_protocol:
+  severity: error
+
+closure_parameter_position:
+  severity: error
+
+file_length:
+  - 400
+  - 2000
+
+force_cast:
+  severity: warning
+
+force_try:
+  severity: warning
+
+function_body_length:
+  - 50
+  - 250
+
+function_parameter_count:
+  - 5
+  - 10
+
+large_tuple:
+  - 2
+  - 5
+
+line_length:
+  - 120
+  - 150
+
+multiple_closures_with_trailing_closure:
+  severity: error
+
+private_over_fileprivate:
+  severity: error
+
+trailing_whitespace:
+  severity: error
+
+type_body_length:
+  - 500
+  - 1500
+
+unneeded_break_in_switch:
+  severity: error
+
+vertical_parameter_alignment:
+  severity: error
+
+vertical_whitespace:
+  severity: error
+
+identifier_name:
+  min_length:
+    error: 3
+  excluded:
+    - i
+    - j
+    - x
+    - y
+    - cm
+    - id
+    - on
+    - sw
+    - to
+    - vc
+
+reporter: "xcode"
