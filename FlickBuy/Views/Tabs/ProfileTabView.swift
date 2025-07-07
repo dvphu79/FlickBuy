@@ -36,10 +36,10 @@ struct ProfileTabView: View {
                     Section {
                         Button(role: .destructive, action: {
                             authViewModel.signOut()
-                        }) {
+                        }, label: {
                             Text("Sign Out")
                                 .frame(maxWidth: .infinity, alignment: .center)
-                        }
+                        })
                     }
                 }
                 .navigationTitle("Profile")

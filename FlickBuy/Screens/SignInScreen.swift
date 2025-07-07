@@ -37,7 +37,7 @@ struct SignInScreen: View {
 
             Button(action: {
                 authViewModel.signIn(email: email, password: password)
-            }) {
+            }, label: {
                 Text("Sign In")
                     .font(.headline)
                     .foregroundColor(.white)
@@ -45,7 +45,7 @@ struct SignInScreen: View {
                     .frame(maxWidth: .infinity)
                     .background(Color.accentColor)
                     .cornerRadius(10)
-            }
+            })
         }
         .padding()
     }
