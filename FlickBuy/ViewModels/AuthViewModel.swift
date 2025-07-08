@@ -42,18 +42,6 @@ class AuthViewModel: ObservableObject {
             }
         }
     }
-    
-//    func checkSession() {
-//        Task {
-//            do {
-//                let user = try await appwriteService.account.get()
-//                self.isLoggedIn = true
-//                self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
-//            } catch {
-//                self.isLoggedIn = false
-//            }
-//        }
-//    }
 
     func signIn(email: String, password: String) {
         Task {
@@ -71,46 +59,6 @@ class AuthViewModel: ObservableObject {
             }
         }
     }
-    
-    // TODO: resolve later.
-    func logIn(email: String, password: String) {
-        Task {
-            do {
-                _ = try await appwriteService.account.createEmailPasswordSession(email: email, password: password)
-                // TODO: resolve later.
-                let user = try await appwriteService.account.get()
-                self.isLoggedIn = true
-                self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
-                self.error = nil
-            } catch let error as AppwriteError {
-                // TODO: resolve later.
-                if let errorType = error.type, errorType == "general_unauthorized_scope", error.code == 401 {
-                    self.isLoggedIn = true
-                    self.currentUser = AppUser(uid: "", email: nil, createdAt: nil)
-                    self.error = nil
-                    return
-                }
-                self.isLoggedIn = false
-                self.error = error.localizedDescription
-            } catch {
-                self.isLoggedIn = false
-                self.error = error.localizedDescription
-            }
-        }
-    }
-
-//    func signOut() {
-//        Task {
-//            do {
-//                _ = try await appwriteService.account.deleteSession(sessionId: "current")
-//                self.currentUser = nil
-//                self.isLoggedIn = false
-//            } catch {
-//                print("sign out error: \(error.localizedDescription)")
-//                self.error = error.localizedDescription
-//            }
-//        }
-//    }
 
     func signOut() {
         Task {
