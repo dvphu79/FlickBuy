@@ -36,7 +36,23 @@ class AuthViewModel: ObservableObject {
     func signIn(email: String, password: String) {
         Task {
             do {
+                let session = try await appwriteService.account.createEmailPasswordSession(email: email, password: password)
+                self.isLoggedIn = true
+                self.currentUser = AppUser(uid: session.userId, email: session.providerUid, createdAt: session.createdAt)
+                self.error = nil
+            } catch {
+                self.isLoggedIn = false
+                self.error = error.localizedDescription
+            }
+        }
+    }
+    
+    // TODO: resolve later.
+    func logIn(email: String, password: String) {
+        Task {
+            do {
                 _ = try await appwriteService.account.createEmailPasswordSession(email: email, password: password)
+                // TODO: resolve later.
                 let user = try await appwriteService.account.get()
                 self.isLoggedIn = true
                 self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
