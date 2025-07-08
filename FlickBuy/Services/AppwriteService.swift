@@ -39,7 +39,7 @@ class AppwriteService: AppwriteServiceProtocol {
             do {
                 // Re-encode the document and then decode it into our Product model.
                 // This avoids a compiler ambiguity between the `data` property and the `data(to:)` method on the Document type.
-                let documentData = try JSONEncoder().encode(document)
+                let documentData = try JSONEncoder().encode(document.data)
                 return try JSONDecoder().decode(Product.self, from: documentData)
             } catch {
                 print("Failed to decode product document: \(error)")

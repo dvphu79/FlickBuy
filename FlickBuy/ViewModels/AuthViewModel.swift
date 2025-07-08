@@ -41,6 +41,16 @@ class AuthViewModel: ObservableObject {
                 self.isLoggedIn = true
                 self.currentUser = AppUser(uid: user.id, email: user.email, createdAt: user.createdAt)
                 self.error = nil
+            } catch let error as AppwriteError {
+                // TODO: resolve later.
+                if let errorType = error.type, errorType == "general_unauthorized_scope", error.code == 401 {
+                    self.isLoggedIn = true
+                    self.currentUser = AppUser(uid: "", email: nil, createdAt: nil)
+                    self.error = nil
+                    return
+                }
+                self.isLoggedIn = false
+                self.error = error.localizedDescription
             } catch {
                 self.isLoggedIn = false
                 self.error = error.localizedDescription

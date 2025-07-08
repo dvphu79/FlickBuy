@@ -12,7 +12,7 @@ struct Product: Codable, Identifiable {
     let name: String
     let description: String
     let price: Double
-    let imageUrl: String
+    let imageUrl: String?
 
     enum CodingKeys: String, CodingKey {
         case id = "$id"

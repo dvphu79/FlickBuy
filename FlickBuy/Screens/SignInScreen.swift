@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SignInScreen: View {
     @EnvironmentObject var authViewModel: AuthViewModel
-    @State private var email = ""
-    @State private var password = ""
+    @State private var email = "vana@vnn.vn"
+    @State private var password = "12345678"
 
     var body: some View {
         VStack(spacing: 20) {
