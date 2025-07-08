@@ -15,14 +15,16 @@ class AppwriteService: AppwriteServiceProtocol {
     let account: Account
     let databases: Databases
 
-    // TODO: Replace with your actual Database and Collection IDs
-    private let databaseId = "684141a6001cb57a8288"
-    private let productCollectionId = "684141c0002a656e4c2e"
+    private let databaseId: String
+    private let productCollectionId: String
 
     private init() {
+        let config = Config.shared
+        databaseId = config.appwriteDatabaseId
+        productCollectionId = config.appwriteProductCollectionId
         client = Client()
-            .setEndpoint("https://fra.cloud.appwrite.io/v1") // Your Appwrite Endpoint
-            .setProject("68413fe7001941b40808") // Your project ID
+            .setEndpoint(config.appwriteEndpoint)
+            .setProject(config.appwriteProjectId)
         account = Account(client)
         databases = Databases(client)
     }

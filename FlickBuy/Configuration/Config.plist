@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppwriteEndpoint</key>
+	<string>https://fra.cloud.appwrite.io/v1</string>
+	<key>AppwriteProjectId</key>
+	<string>68413fe7001941b40808</string>
+	<key>AppwriteDatabaseId</key>
+	<string>684141a6001cb57a8288</string>
+	<key>AppwriteProductCollectionId</key>
+	<string>684141c0002a656e4c2e</string>
+</dict>
+</plist>
